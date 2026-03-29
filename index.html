@@ -1618,6 +1618,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <h3>🔴 즉시 예약</h3>
     <div class="check-item"><input type="checkbox" checked> <span><strong>마시청 서커스</strong> — 5/1(금) <strong>14:00 낮 공연 100분</strong> | 140,400원/3인 예약완료</span></div>
     <div class="check-item"><input type="checkbox" checked> <span><strong>동방명주</strong> — 4/29(수) 17:00 뷔페 디너 | 281,100원/3인 예약완료</span></div>
+    <div class="check-item"><input type="checkbox"> <span><strong>정준혁 여권정보</strong> — 아고다 고객센터에 남방항공 여권번호 등록</span></div>
     <div class="check-item"><input type="checkbox"> <span><strong>점도덕</strong> — 5/1(금) 17:30 | 디엔핑 예약</span></div>
     <div class="check-item"><input type="checkbox"> <span><strong>라오지스</strong> — 5/2(토) | 디엔핑 or 전화 예약</span></div>
   </div>
@@ -1750,8 +1751,8 @@ window.showDay=function(day){
   const tabColors={1:'#2563eb',2:'#7c3aed',3:'#dc2626',4:'#16a34a'};
   [1,2,3,4].forEach(d=>{
     const b=document.getElementById('dtab'+d);
-    b.style.background=d===day?tabColors[d]:'#e5e7eb';
-    b.style.color=d===day?'white':'#374151';
+    var inactiveColors={1:'#dbeafe',2:'#f5f3ff',3:'#fee2e2',4:'#dcfce7'};b.style.background=d===day?tabColors[d]:inactiveColors[d];
+    var inactiveText={1:'#2563eb',2:'#7c3aed',3:'#dc2626',4:'#16a34a'};b.style.color=d===day?'white':inactiveText[d];
   });
 
   const dd=days[day], color=colors[day], bounds=[];
