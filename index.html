@@ -1820,7 +1820,7 @@ window.showDay=function(day){
     rLayers.push(mk);rLayers.push(nl);
   });
 
-  if(bounds.length)rmap.fitBounds(bounds,{padding:[50,50]});
+  if(bounds.length)rmap.fitBounds(bounds,{padding:[80,80],maxZoom:14});
 
   // Timeline
   const tl=document.getElementById('route-timeline');
