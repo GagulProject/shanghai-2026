@@ -1444,15 +1444,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="day-header">
       <div class="day-number" style="background:var(--success);font-size:0.9rem">Day4</div>
       <div class="day-title">
-        <h2>여유로운 귀국일 — 산책+쇼핑+하이디라오 ✅</h2>
-        <div class="theme">난징동루 산책 → 쇼핑 → 하이디라오 → 호텔 짐 → 공항.</div>
+        <h2>여유로운 귀국일 ✅</h2>
+        <div class="theme">아침 산책 → 쇼핑 → 하이디라오 → 호텔 짐 → 공항. 여유.</div>
       </div>
     </div>
     <div style="padding:0 1.5rem 1.5rem;font-size:0.85rem;line-height:2">
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.3rem">
         <span style="background:var(--primary-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🏨 호텔</span>
         <span style="color:var(--gray-500)">→ 도보</span>
-        <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🛍️ 쇼핑</span>
+        <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🚶 난징동루 산책+쇼핑</span>
+        <span style="color:var(--gray-500)">→ 지하철</span>
+        <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🛍️ 래플스시티</span>
         <span style="color:var(--gray-500)">→</span>
         <span style="background:var(--warning-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🍲 하이디라오</span>
         <span style="color:var(--gray-500)">→</span>
@@ -1751,14 +1753,13 @@ const days={
   ]
 },
 4:{
-  summary:'이동 ~100분 · 여유로운 귀국일 · 맛집 2곳',
+  summary:'여유로운 귀국일 · 산책+쇼핑+하이디라오',
   stops:[
-    {n:'🏨 호텔',lat:31.2365,lng:121.4810,t:'09:00',d:'체크아웃',s:''},
-    {n:'🇰🇷 임시정부',lat:31.2185,lng:121.4738,t:'09:30',d:'무료, 한국어 안내',s:'1시간'},
-    {n:'🌳 우캉루',lat:31.2040,lng:121.4380,t:'10:40',d:'다리미 건물 포토',s:'20분'},
-    {n:'🍖 라오지스',lat:31.2055,lng:121.4340,t:'11:00',d:'홍소육 오픈런',s:'1시간'},
-    {n:'🏨 호텔(짐)',lat:31.2368,lng:121.4813,t:'12:20',d:'짐 수령',s:'10분'},
-    {n:'🧳 호텔(짐)',lat:31.2383,lng:121.4833,t:'12:20',d:'프론트 짐 수령',s:'10분'},
+    {n:'🏨 호텔',lat:31.2365,lng:121.4810,t:'08:00',d:'아침 산책 출발',s:''},
+    {n:'🚶 난징동루',lat:31.2375,lng:121.4790,t:'08:00',d:'산책+지옌빙+제1식품상점',s:'1시간'},
+    {n:'🛍️ 래플스시티',lat:31.2303,lng:121.4737,t:'09:00',d:'대형몰 구경',s:'1시간'},
+    {n:'🍲 하이디라오',lat:31.2350,lng:121.4800,t:'10:30',d:'훠궈 브런치',s:'1시간'},
+    {n:'🧳 호텔(짐)',lat:31.2368,lng:121.4813,t:'11:30',d:'짐 수령',s:''},
     {n:'✈️ 푸동공항',lat:31.1443,lng:121.8084,t:'~13:30',d:'16:50 탑승',s:''}
   ],
   moves:[
