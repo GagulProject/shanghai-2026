@@ -921,10 +921,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
       </div>
       <div class="event">
         <div class="event-time">16:30</div>
-        <div class="event-icon">🏙️</div>
+        <div class="event-icon">🏰</div>
         <div class="event-content">
-          <div class="name">루자쭈이 마천루 구경</div>
-          <div class="desc">지하철 2호선 루자쭈이역. 원형육교 포토. 관광터널은 돌아올 때!</div>
+          <div class="name">디즈니 스토어 (20분)</div>
+          <div class="desc">루자쭈이역 근처. 세계 최대급 플래그십. 동방명주까지 도보 3분.</div>
         </div>
       </div>
       <div class="event" style="padding:0.2rem 0;border-bottom:none">
@@ -1351,8 +1351,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <span style="color:var(--gray-500)">→ 도보 10분</span>
         <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🌆 와이탄(낮)</span>
         <span style="color:var(--gray-500)">→ 지하철 5분</span>
-        <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🏙️ 루자쭈이</span>
-        <span style="color:var(--gray-500)">→ 도보 5분</span>
+        <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🏰 디즈니 스토어</span>
+        <span style="color:var(--gray-500)">→ 도보 3분</span>
         <span style="background:var(--warning-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🌃 동방명주(저녁)</span>
         <span style="color:var(--gray-500)">→ 관광터널 5분</span>
         <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🌉 와이탄</span>
@@ -1572,6 +1572,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <div class="spot-when">Day3 서커스 후 도보 10분</div>
     </div>
     <div class="spot-card">
+      <div class="spot-name">🏙️ 루자쭈이 마천루</div>
+      <div class="spot-desc">원형 육교, 상해타워(632m). 아래에서 올려다보는 압도감.</div>
+      <div class="spot-when">Day1 디즈니 스토어 전후</div>
+    </div>
+    <div class="spot-card">
       <div class="spot-name">🏗️ 1933 라오창팡</div>
       <div class="spot-desc">도축장 리모델링. 콘크리트 미로.</div>
       <div class="spot-when">Day2 오전 택시 10분</div>
@@ -1685,7 +1690,7 @@ const days={
   stops:[
     {n:'🏨 호텔',lat:31.2426,lng:121.4797,t:'15:40',d:'택시 도착, 체크인 20분',s:'20분'},
     {n:'🌆 와이탄(낮)',lat:31.2353,lng:121.4876,t:'16:00',d:'유럽식 건축 포토, 외탄원. 도보 10분.',s:'20분'},
-    {n:'🏙️ 루자쭈이',lat:31.2402,lng:121.4979,t:'16:30',d:'지하철 2호선 1정거장. 마천루 원형육교 포토.',s:'20분'},
+    {n:'🏰 디즈니 스토어',lat:31.2403,lng:121.4948,t:'16:30',d:'세계 최대급 디즈니 플래그십. 동방명주 도보 3분.',s:'20분'},
     {n:'🌃 동방명주',lat:31.2419,lng:121.4953,t:'17:00',d:'뷔페 디너 17:00~19:00 (281,100원/3인)',s:'2.5시간'},
     {n:'🚇 관광터널(동쪽입구)',lat:31.2407,lng:121.4896,t:'19:30',d:'동방명주 옆 → LED 터널 5분 → 와이탄 (50위안/인)',s:'5분'},
     {n:'🌉 와이탄 산책',lat:31.2360,lng:121.4880,t:'19:40',d:'관광터널 서쪽 출구. 유람선 탑승 대기. 20:20까지 탑승.',s:'40분'},
@@ -1696,7 +1701,7 @@ const days={
   moves:[
     {f:0,t:1,tr:'도보',tm:'10분',dt:'1km',c:''},
     {f:1,t:2,tr:'지하철',tm:'5분',dt:'1.5km',c:'4위안'},
-    {f:2,t:3,tr:'도보',tm:'5분',dt:'300m',c:''},
+    {f:2,t:3,tr:'도보',tm:'3분',dt:'200m',c:''},
     {f:3,t:4,tr:'관광터널',tm:'5분',dt:'647m',c:'50위안'},
     {f:4,t:5,tr:'도보',tm:'5분',dt:'300m',c:''},
     {f:5,t:6,tr:'도보',tm:'근처',dt:'',c:''},
