@@ -917,14 +917,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <div class="event" style="padding:0.2rem 0;border-bottom:none">
         <div class="event-time" style="color:#d1d5db">↓</div>
         <div class="event-icon" style="font-size:0.9rem">🚇</div>
-        <div class="event-content"><div class="desc" style="font-size:0.75rem;color:#9ca3af">관광터널 5분 · 50위안</div></div>
+        <div class="event-content"><div class="desc" style="font-size:0.75rem;color:#9ca3af">지하철 2호선 1정거장 · 5분</div></div>
       </div>
       <div class="event">
-        <div class="event-time">16:20</div>
-        <div class="event-icon">🚇</div>
+        <div class="event-time">16:30</div>
+        <div class="event-icon">🏙️</div>
         <div class="event-content">
-          <div class="name">관광터널 → 루자쭈이 마천루</div>
-          <div class="desc">관광터널(50위안, LED 사이키 5분) → 루자쭈이 원형육교 포토</div>
+          <div class="name">루자쭈이 마천루 구경</div>
+          <div class="desc">지하철 2호선 루자쭈이역. 원형육교 포토. 관광터널은 돌아올 때!</div>
         </div>
       </div>
       <div class="event" style="padding:0.2rem 0;border-bottom:none">
@@ -949,7 +949,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <div class="event" style="padding:0.2rem 0;border-bottom:none">
         <div class="event-time" style="color:#d1d5db">↓</div>
         <div class="event-icon" style="font-size:0.9rem">🚇</div>
-        <div class="event-content"><div class="desc" style="font-size:0.75rem;color:#9ca3af">관광터널 or 택시 · 5~20분</div></div>
+        <div class="event-content"><div class="desc" style="font-size:0.75rem;color:#9ca3af">관광터널 5분 · 50위안 (LED 사이키 체험!)</div></div>
       </div>
       <div class="event">
         <div class="event-time">19:30</div>
@@ -1357,11 +1357,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <span style="background:var(--primary-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🏨 호텔</span>
         <span style="color:var(--gray-500)">→ 도보 10분</span>
         <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🌆 와이탄(낮)</span>
-        <span style="color:var(--gray-500)">→ 터널 5분 · 50위안</span>
+        <span style="color:var(--gray-500)">→ 지하철 5분</span>
         <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🏙️ 루자쭈이</span>
         <span style="color:var(--gray-500)">→ 도보 5분</span>
         <span style="background:var(--warning-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🌃 동방명주(저녁)</span>
-        <span style="color:var(--gray-500)">→ 터널 or 택시</span>
+        <span style="color:var(--gray-500)">→ 관광터널 5분</span>
         <span style="background:var(--gray-100);padding:0.2rem 0.6rem;border-radius:6px">🌉 와이탄</span>
         <span style="color:var(--gray-500)">→ 도보</span>
         <span style="background:var(--warning-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🚢 유람선</span>
@@ -1369,8 +1369,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <span style="background:var(--primary-light);padding:0.2rem 0.6rem;border-radius:6px;font-weight:600">🏨 호텔</span>
       </div>
       <div style="margin-top:0.75rem;color:var(--gray-500)">
-        💰 이동비: 관광터널 50위안 + 택시 ~30위안 = <strong>~80위안/인</strong><br>
-        ⏱️ 총 이동시간: ~50분 (도보+터널+택시)
+        💰 이동비: 지하철 4위안 + 관광터널 50위안 = <strong>54위안/인</strong><br>
+        ⏱️ 총 이동시간: ~45분 (도보+지하철+터널)
       </div>
     </div>
   </div>
@@ -1704,9 +1704,9 @@ const days={
     {f:0,t:1,tr:'도보',tm:'5분',dt:'400m',c:''},
     {f:1,t:2,tr:'도보',tm:'10분',dt:'1km',c:''},
     {f:2,t:3,tr:'도보',tm:'2분',dt:'200m',c:''},
-    {f:3,t:4,tr:'관광터널',tm:'5분',dt:'647m',c:'50위안'},
+    {f:3,t:4,tr:'지하철',tm:'5분',dt:'1.5km',c:'4위안'},
     {f:4,t:5,tr:'도보',tm:'5분',dt:'300m',c:''},
-    {f:5,t:6,tr:'택시/터널',tm:'5~20분',dt:'1.5km',c:'택시 ~30위안'},
+    {f:5,t:6,tr:'관광터널',tm:'5분',dt:'647m',c:'50위안'},
     {f:6,t:7,tr:'도보',tm:'근처',dt:'',c:''},
     {f:6,t:7,tr:'도보',tm:'10분',dt:'800m',c:''}
   ]
