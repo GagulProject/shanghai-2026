@@ -803,7 +803,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 <div class="container">
   <div id="info-grid"></div>
-  <div id="passport-table"></div>
   <div id="alert"></div>
   <div id="timelines"></div>
 
@@ -861,11 +860,6 @@ var tripMeta = {
   },
   hotel: { name: '하이 인 상하이 이스트 베이징 로드', detail: '와이탄 도보 10분 \xb7 난징동루 도보 5분' },
   members: { names: 'LEE \xb7 JUNG \xb7 KIM', detail: '체크인 4/29 14:00 이후 \xb7 체크아웃 5/2 12:00 이전' },
-  passports: [
-    { name: '이강욱', eng: 'LEE KANGUK', number: 'M278R2396', expiry: '2033-08-08 \u2705' },
-    { name: '정준혁', eng: 'JUNG JOONHYEOK', number: 'M423H7347', expiry: '2036-03-24 \u2705' },
-    { name: '김대훈', eng: 'KIM DAEHOON', number: 'M083B6240', expiry: '2035-08-25 \u2705' }
-  ],
   alert: '4/29~5/2 상해 전역 극혼잡. 서커스\xb7동방명주\xb7유람선 <strong>사전 예약 필수</strong>, 예원은 <strong>09:00 오픈런</strong>, 이동 시간 1.5~2배 여유.'
 };
 
@@ -1261,16 +1255,6 @@ function renderInfoGrid() {
     '<div class="info-card"><h3>\ud83d\udc65 투숙객</h3><div class="value">' + tripMeta.members.names + '</div><div class="detail">' + tripMeta.members.detail + '</div></div>';
 }
 
-function renderPassportTable() {
-  var el = document.getElementById('passport-table');
-  var h = '<div class="food-card" style="margin-bottom:1.5rem"><table>';
-  h += '<tr><th>이름</th><th>영문</th><th>여권번호</th><th>만기일</th></tr>';
-  tripMeta.passports.forEach(function(p) {
-    h += '<tr><td>' + p.name + '</td><td>' + p.eng + '</td><td>' + p.number + '</td><td>' + p.expiry + '</td></tr>';
-  });
-  h += '</table></div>';
-  el.innerHTML = h;
-}
 
 function renderAlert() {
   var el = document.getElementById('alert');
@@ -1517,7 +1501,6 @@ function renderChecklist() {
 // ============================================================
 renderHero();
 renderInfoGrid();
-renderPassportTable();
 renderAlert();
 renderAllTimelines();
 renderAllRouteAnalysis();
