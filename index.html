@@ -1005,13 +1005,13 @@ var days = {
     label: 'Day3',
     color: 'var(--danger)',
     colorHex: '#dc2626',
-    theme: '예원 \u2192 임시정부 \u2192 신천지 \u2192 티엔즈팡 \u2192 우캉루 \u2192 점도덕 \u2192 서커스 \u2192 예원 야경',
+    theme: '예원 \u2192 임시정부 \u2192 신천지 \u2192 티엔즈팡 \u2192 우캉루 \u2192 점도덕 \u2192 서커스 \u2192 예원 야경 \u2192 양꼬치',
     dateBadge: '<span style="color:var(--danger);font-size:0.85rem">\ud83d\udd34 노동절</span>',
     routeTitle: '남쪽 한붓그리기 + 서커스 북상 \u2705',
     routeSubtitle: '오전 도보 \u2192 오후 지하철 3회 \u2192 서커스 후 남하 귀가',
     routeBorderColor: 'var(--danger)',
     routeCost: '\ud83d\udcb0 이동비: 지하철 3회 = <strong>~13위안/인</strong> + 오전 전부 도보',
-    routeTime: '\u23f1\ufe0f 총 이동시간: ~135분 (도보 65분 + 지하철 70분)',
+    routeTime: '\u23f1\ufe0f 총 이동시간: ~145분 (도보 65분 + 지하철 70분 + 야식 후 귀환)',
     stops: [
       { time: '09:00', icon: '\ud83c\udfef', name: '예원 오픈런', tag: {text:'예약 완료 \xb7 09:00~12:30', cls:'reserve'}, desc: '명나라 강남식 전통 정원. 40위안. 10시 이후 인산인해!' },
       { time: '10:30', icon: '\ud83c\udf5c', name: '성황묘 먹자골목 \u2014 점심 겸 간식 투어',
@@ -1025,7 +1025,8 @@ var days = {
         detail: '\ud83d\udccd 지우광백화점 7층 \xb7 지하철 2호선 징안쓰역 직결<br><div style="margin-top:0.4rem"><span class="menu-item">\ud83e\udd90 하가오</span><span class="menu-item">\ud83e\uded3 차슈바오</span><span class="menu-item">\ud83c\udf5c 창펀</span><span class="menu-item">\ud83e\udd6e 에그타르트</span><span class="menu-item">\ud83e\uddc1 커스터드번</span></div><div style="margin-top:0.4rem">\ud83d\udcb0 3인 250~400위안 \xb7 \u26a0\ufe0f 노동절 웨이팅 \u2014 디엔핑 미리 번호 뽑기</div>' },
       { time: '19:30', icon: '\ud83c\udfaa', name: '마시청 서커스', tag: {text:'예약 완료', cls:'reserve'}, desc: '19:30 시작, 100분. 140,400원/3인. 19:00까지 도착 \u2192 티켓 교환.' },
       { time: '21:35', icon: '\ud83c\udfee', name: '예원 야경 \u2014 오전과 다른 경험!', desc: '정원 밖 성황묘 등불 야경. 구곡교 연못 반사가 하이라이트.' },
-      { time: '~22:35', icon: '\ud83c\udfe8', name: '호텔 귀환', desc: '예원에서 도보 20분' }
+      { time: '22:15', icon: '\ud83d\udc11', name: '양꼬치 야식', desc: '很久以前羊肉串 or 디엔핑 검색. 석탄 화로 직화구이. 3인 200~350위안.' },
+      { time: '~23:30', icon: '\ud83c\udfe8', name: '호텔 귀환', desc: '양꼬치집에서 도보 or 택시' }
     ],
     moves: [
       { icon: '\ud83d\udeb6', desc: '도보 20분' },
@@ -1038,7 +1039,8 @@ var days = {
       null,
       { icon: '\ud83d\ude87', desc: '지하철 15~20분' },
       { icon: '\ud83d\ude87', desc: '지하철 25분' },
-      { icon: '\ud83d\udeb6', desc: '도보 20분' }
+      null,
+      { icon: '\ud83d\udeb6', desc: '도보/택시' }
     ],
     routeChips: [
       { text: '\ud83c\udfe8 호텔', bg: 'var(--primary-light)', bold: true },
@@ -1056,7 +1058,9 @@ var days = {
       { text: '\ud83c\udfaa 서커스', bg: 'var(--warning-light)', bold: true },
       { arrow: '지하철 25분 \u2b07\ufe0f남하' },
       { text: '\ud83c\udfee 예원 야경', bg: 'var(--gray-100)' },
-      { arrow: '도보 20분' },
+      { arrow: '도보' },
+      { text: '\ud83d\udc11 양꼬치', bg: 'var(--warning-light)', bold: true },
+      { arrow: '도보/택시' },
       { text: '\ud83c\udfe8 호텔', bg: 'var(--primary-light)', bold: true }
     ],
     mapStops: [
@@ -1071,7 +1075,8 @@ var days = {
       {n:'\ud83e\udd5f 점도덕',lat:31.2235,lng:121.4470,t:'17:00',d:'지우광백화점 7층 딤섬',s:'1.5시간'},
       {n:'\ud83c\udfaa 서커스',lat:31.2580,lng:121.4550,t:'19:30',d:'마시청 서커스 100분 (46,800원/인)',s:'1시간40분'},
       {n:'\ud83c\udfee 예원 야경',lat:31.2280,lng:121.4915,t:'21:35',d:'성황묘 등불 야경 (정원 밖)',s:'40분'},
-      {n:'\ud83c\udfe8 호텔 귀환',lat:31.2426,lng:121.4797,t:'~22:35',d:'도보 20분',s:''}
+      {n:'\ud83d\udc11 양꼬치',lat:31.2300,lng:121.4900,t:'22:15',d:'很久以前 or 디엔핑 검색. 석탄 화로 직화구이.',s:'1시간'},
+      {n:'\ud83c\udfe8 호텔 귀환',lat:31.2426,lng:121.4797,t:'~23:30',d:'도보 or 택시',s:''}
     ],
     mapMoves: [
       {f:0,t:1,tr:'도보',tm:'20분',dt:'1.6km',c:''},
@@ -1084,9 +1089,10 @@ var days = {
       {f:7,t:8,tr:'도보',tm:'근처',dt:'',c:''},
       {f:8,t:9,tr:'지하철',tm:'15~20분',dt:'5km',c:'5위안'},
       {f:9,t:10,tr:'지하철',tm:'25분',dt:'6km',c:'5위안'},
-      {f:10,t:11,tr:'도보',tm:'20분',dt:'1.6km',c:''}
+      {f:10,t:11,tr:'도보',tm:'5분',dt:'300m',c:''},
+      {f:11,t:12,tr:'도보/택시',tm:'15~20분',dt:'1.5km',c:''}
     ],
-    summary: '이동 ~135분 \xb7 13위안/인 \xb7 오전 도보 한붓그리기 + 지하철 3회'
+    summary: '이동 ~145분 \xb7 13위안/인 \xb7 오전 도보 한붓그리기 + 지하철 3회 + 양꼬치 야식'
   },
   4: {
     date: '5월 2일 (토)',
